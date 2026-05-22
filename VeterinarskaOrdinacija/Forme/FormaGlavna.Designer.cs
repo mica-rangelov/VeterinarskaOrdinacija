@@ -71,6 +71,8 @@ namespace VeterinarskaOrdinacija.Forme
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -147,14 +149,15 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // menuGlavni
             // 
+            this.menuGlavni.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuGlavni.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuGlavni.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miFajl,
             this.miPomoc});
             this.menuGlavni.Location = new System.Drawing.Point(0, 0);
             this.menuGlavni.Name = "menuGlavni";
-            this.menuGlavni.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuGlavni.Size = new System.Drawing.Size(1257, 30);
+            this.menuGlavni.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuGlavni.Size = new System.Drawing.Size(1414, 36);
             this.menuGlavni.TabIndex = 3;
             // 
             // miFajl
@@ -163,20 +166,20 @@ namespace VeterinarskaOrdinacija.Forme
             this.miOdjava,
             this.miIzlaz});
             this.miFajl.Name = "miFajl";
-            this.miFajl.Size = new System.Drawing.Size(45, 26);
+            this.miFajl.Size = new System.Drawing.Size(53, 32);
             this.miFajl.Text = "&Fajl";
             // 
             // miOdjava
             // 
             this.miOdjava.Name = "miOdjava";
-            this.miOdjava.Size = new System.Drawing.Size(153, 26);
+            this.miOdjava.Size = new System.Drawing.Size(187, 34);
             this.miOdjava.Text = "Odjavi se";
             this.miOdjava.Click += new System.EventHandler(this.miOdjava_Click);
             // 
             // miIzlaz
             // 
             this.miIzlaz.Name = "miIzlaz";
-            this.miIzlaz.Size = new System.Drawing.Size(153, 26);
+            this.miIzlaz.Size = new System.Drawing.Size(187, 34);
             this.miIzlaz.Text = "Izlaz";
             this.miIzlaz.Click += new System.EventHandler(this.miIzlaz_Click);
             // 
@@ -185,13 +188,13 @@ namespace VeterinarskaOrdinacija.Forme
             this.miPomoc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miOProgramu});
             this.miPomoc.Name = "miPomoc";
-            this.miPomoc.Size = new System.Drawing.Size(68, 26);
+            this.miPomoc.Size = new System.Drawing.Size(83, 32);
             this.miPomoc.Text = "&Pomoć";
             // 
             // miOProgramu
             // 
             this.miOProgramu.Name = "miOProgramu";
-            this.miOProgramu.Size = new System.Drawing.Size(173, 26);
+            this.miOProgramu.Size = new System.Drawing.Size(213, 34);
             this.miOProgramu.Text = "O programu";
             this.miOProgramu.Click += new System.EventHandler(this.miOProgramu_Click);
             // 
@@ -201,23 +204,23 @@ namespace VeterinarskaOrdinacija.Forme
             this.toolStripGlavni.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbOsvezi,
             this.tslInfo});
-            this.toolStripGlavni.Location = new System.Drawing.Point(0, 30);
+            this.toolStripGlavni.Location = new System.Drawing.Point(0, 36);
             this.toolStripGlavni.Name = "toolStripGlavni";
-            this.toolStripGlavni.Size = new System.Drawing.Size(1257, 31);
+            this.toolStripGlavni.Size = new System.Drawing.Size(1414, 38);
             this.toolStripGlavni.TabIndex = 1;
             // 
             // tsbOsvezi
             // 
             this.tsbOsvezi.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tsbOsvezi.Name = "tsbOsvezi";
-            this.tsbOsvezi.Size = new System.Drawing.Size(56, 28);
+            this.tsbOsvezi.Size = new System.Drawing.Size(68, 33);
             this.tsbOsvezi.Text = "Osveži";
             this.tsbOsvezi.Click += new System.EventHandler(this.tsbOsvezi_Click);
             // 
             // tslInfo
             // 
             this.tslInfo.Name = "tslInfo";
-            this.tslInfo.Size = new System.Drawing.Size(315, 28);
+            this.tslInfo.Size = new System.Drawing.Size(376, 33);
             this.tslInfo.Text = "Tip: kliknite na čvor u stablu za brzu navigaciju";
             // 
             // statusStripGlavni
@@ -227,33 +230,34 @@ namespace VeterinarskaOrdinacija.Forme
             this.lblStatusKorisnik,
             this.lblStatusRazmak,
             this.lblStatusVreme});
-            this.statusStripGlavni.Location = new System.Drawing.Point(0, 667);
+            this.statusStripGlavni.Location = new System.Drawing.Point(0, 834);
             this.statusStripGlavni.Name = "statusStripGlavni";
-            this.statusStripGlavni.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusStripGlavni.Size = new System.Drawing.Size(1257, 26);
+            this.statusStripGlavni.Padding = new System.Windows.Forms.Padding(1, 0, 18, 0);
+            this.statusStripGlavni.Size = new System.Drawing.Size(1414, 32);
             this.statusStripGlavni.TabIndex = 2;
             // 
             // lblStatusKorisnik
             // 
             this.lblStatusKorisnik.Name = "lblStatusKorisnik";
-            this.lblStatusKorisnik.Size = new System.Drawing.Size(64, 20);
+            this.lblStatusKorisnik.Size = new System.Drawing.Size(78, 25);
             this.lblStatusKorisnik.Text = "Korisnik:";
             // 
             // lblStatusRazmak
             // 
             this.lblStatusRazmak.Name = "lblStatusRazmak";
-            this.lblStatusRazmak.Size = new System.Drawing.Size(1176, 20);
+            this.lblStatusRazmak.Size = new System.Drawing.Size(1317, 25);
             this.lblStatusRazmak.Spring = true;
             // 
             // lblStatusVreme
             // 
             this.lblStatusVreme.Name = "lblStatusVreme";
-            this.lblStatusVreme.Size = new System.Drawing.Size(0, 20);
+            this.lblStatusVreme.Size = new System.Drawing.Size(0, 25);
             // 
             // split
             // 
             this.split.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.split.Location = new System.Drawing.Point(0, 61);
+            this.split.Location = new System.Drawing.Point(0, 74);
+            this.split.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.split.Name = "split";
             // 
             // split.Panel1
@@ -263,17 +267,18 @@ namespace VeterinarskaOrdinacija.Forme
             // split.Panel2
             // 
             this.split.Panel2.Controls.Add(this.tcGlavni);
-            this.split.Size = new System.Drawing.Size(1257, 606);
-            this.split.SplitterDistance = 297;
-            this.split.SplitterWidth = 5;
+            this.split.Size = new System.Drawing.Size(1414, 760);
+            this.split.SplitterDistance = 334;
+            this.split.SplitterWidth = 6;
             this.split.TabIndex = 0;
             // 
             // trvNavigacija
             // 
             this.trvNavigacija.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trvNavigacija.Location = new System.Drawing.Point(0, 0);
+            this.trvNavigacija.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.trvNavigacija.Name = "trvNavigacija";
-            this.trvNavigacija.Size = new System.Drawing.Size(297, 606);
+            this.trvNavigacija.Size = new System.Drawing.Size(334, 760);
             this.trvNavigacija.TabIndex = 0;
             this.trvNavigacija.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.trvNavigacija_AfterSelect);
             this.trvNavigacija.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.trvNavigacija_NodeMouseDoubleClick);
@@ -285,9 +290,10 @@ namespace VeterinarskaOrdinacija.Forme
             this.tcGlavni.Controls.Add(this.tabPregledi);
             this.tcGlavni.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcGlavni.Location = new System.Drawing.Point(0, 0);
+            this.tcGlavni.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tcGlavni.Name = "tcGlavni";
             this.tcGlavni.SelectedIndex = 0;
-            this.tcGlavni.Size = new System.Drawing.Size(955, 606);
+            this.tcGlavni.Size = new System.Drawing.Size(1074, 760);
             this.tcGlavni.TabIndex = 0;
             // 
             // tabVlasnici
@@ -295,10 +301,11 @@ namespace VeterinarskaOrdinacija.Forme
             this.tabVlasnici.Controls.Add(this.dgvVlasnici);
             this.tabVlasnici.Controls.Add(this.pnlVlasniciTop);
             this.tabVlasnici.Controls.Add(this.pnlVlasniciDno);
-            this.tabVlasnici.Location = new System.Drawing.Point(4, 25);
+            this.tabVlasnici.Location = new System.Drawing.Point(4, 29);
+            this.tabVlasnici.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabVlasnici.Name = "tabVlasnici";
-            this.tabVlasnici.Padding = new System.Windows.Forms.Padding(3);
-            this.tabVlasnici.Size = new System.Drawing.Size(947, 577);
+            this.tabVlasnici.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabVlasnici.Size = new System.Drawing.Size(1066, 727);
             this.tabVlasnici.TabIndex = 0;
             this.tabVlasnici.Text = "Vlasnici";
             this.tabVlasnici.UseVisualStyleBackColor = true;
@@ -309,14 +316,15 @@ namespace VeterinarskaOrdinacija.Forme
             this.dgvVlasnici.AllowUserToDeleteRows = false;
             this.dgvVlasnici.ColumnHeadersHeight = 29;
             this.dgvVlasnici.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvVlasnici.Location = new System.Drawing.Point(3, 46);
+            this.dgvVlasnici.Location = new System.Drawing.Point(3, 58);
+            this.dgvVlasnici.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvVlasnici.MultiSelect = false;
             this.dgvVlasnici.Name = "dgvVlasnici";
             this.dgvVlasnici.ReadOnly = true;
             this.dgvVlasnici.RowHeadersVisible = false;
             this.dgvVlasnici.RowHeadersWidth = 51;
             this.dgvVlasnici.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVlasnici.Size = new System.Drawing.Size(941, 477);
+            this.dgvVlasnici.Size = new System.Drawing.Size(1060, 601);
             this.dgvVlasnici.TabIndex = 0;
             this.dgvVlasnici.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVlasnici_CellDoubleClick);
             // 
@@ -325,24 +333,26 @@ namespace VeterinarskaOrdinacija.Forme
             this.pnlVlasniciTop.Controls.Add(this.lblPretraga);
             this.pnlVlasniciTop.Controls.Add(this.txtPretragaVlasnika);
             this.pnlVlasniciTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlVlasniciTop.Location = new System.Drawing.Point(3, 3);
+            this.pnlVlasniciTop.Location = new System.Drawing.Point(3, 4);
+            this.pnlVlasniciTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlVlasniciTop.Name = "pnlVlasniciTop";
-            this.pnlVlasniciTop.Size = new System.Drawing.Size(941, 43);
+            this.pnlVlasniciTop.Size = new System.Drawing.Size(1060, 54);
             this.pnlVlasniciTop.TabIndex = 1;
             // 
             // lblPretraga
             // 
-            this.lblPretraga.Location = new System.Drawing.Point(9, 13);
+            this.lblPretraga.Location = new System.Drawing.Point(10, 16);
             this.lblPretraga.Name = "lblPretraga";
-            this.lblPretraga.Size = new System.Drawing.Size(91, 21);
+            this.lblPretraga.Size = new System.Drawing.Size(102, 26);
             this.lblPretraga.TabIndex = 0;
             this.lblPretraga.Text = "Pretraga:";
             // 
             // txtPretragaVlasnika
             // 
-            this.txtPretragaVlasnika.Location = new System.Drawing.Point(103, 11);
+            this.txtPretragaVlasnika.Location = new System.Drawing.Point(116, 14);
+            this.txtPretragaVlasnika.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPretragaVlasnika.Name = "txtPretragaVlasnika";
-            this.txtPretragaVlasnika.Size = new System.Drawing.Size(342, 22);
+            this.txtPretragaVlasnika.Size = new System.Drawing.Size(384, 26);
             this.txtPretragaVlasnika.TabIndex = 1;
             this.txtPretragaVlasnika.TextChanged += new System.EventHandler(this.txtPretragaVlasnika_TextChanged);
             // 
@@ -352,16 +362,18 @@ namespace VeterinarskaOrdinacija.Forme
             this.pnlVlasniciDno.Controls.Add(this.btnIzmeniVlasnika);
             this.pnlVlasniciDno.Controls.Add(this.btnObrisiVlasnika);
             this.pnlVlasniciDno.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlVlasniciDno.Location = new System.Drawing.Point(3, 523);
+            this.pnlVlasniciDno.Location = new System.Drawing.Point(3, 659);
+            this.pnlVlasniciDno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlVlasniciDno.Name = "pnlVlasniciDno";
-            this.pnlVlasniciDno.Size = new System.Drawing.Size(941, 51);
+            this.pnlVlasniciDno.Size = new System.Drawing.Size(1060, 64);
             this.pnlVlasniciDno.TabIndex = 2;
             // 
             // btnDodajVlasnika
             // 
-            this.btnDodajVlasnika.Location = new System.Drawing.Point(9, 11);
+            this.btnDodajVlasnika.Location = new System.Drawing.Point(10, 14);
+            this.btnDodajVlasnika.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDodajVlasnika.Name = "btnDodajVlasnika";
-            this.btnDodajVlasnika.Size = new System.Drawing.Size(114, 32);
+            this.btnDodajVlasnika.Size = new System.Drawing.Size(128, 40);
             this.btnDodajVlasnika.TabIndex = 0;
             this.btnDodajVlasnika.Text = "Dodaj";
             this.btnDodajVlasnika.UseVisualStyleBackColor = true;
@@ -369,9 +381,10 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // btnIzmeniVlasnika
             // 
-            this.btnIzmeniVlasnika.Location = new System.Drawing.Point(131, 11);
+            this.btnIzmeniVlasnika.Location = new System.Drawing.Point(147, 14);
+            this.btnIzmeniVlasnika.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIzmeniVlasnika.Name = "btnIzmeniVlasnika";
-            this.btnIzmeniVlasnika.Size = new System.Drawing.Size(114, 32);
+            this.btnIzmeniVlasnika.Size = new System.Drawing.Size(128, 40);
             this.btnIzmeniVlasnika.TabIndex = 1;
             this.btnIzmeniVlasnika.Text = "Izmeni";
             this.btnIzmeniVlasnika.UseVisualStyleBackColor = true;
@@ -379,9 +392,10 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // btnObrisiVlasnika
             // 
-            this.btnObrisiVlasnika.Location = new System.Drawing.Point(254, 11);
+            this.btnObrisiVlasnika.Location = new System.Drawing.Point(286, 14);
+            this.btnObrisiVlasnika.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnObrisiVlasnika.Name = "btnObrisiVlasnika";
-            this.btnObrisiVlasnika.Size = new System.Drawing.Size(114, 32);
+            this.btnObrisiVlasnika.Size = new System.Drawing.Size(128, 40);
             this.btnObrisiVlasnika.TabIndex = 2;
             this.btnObrisiVlasnika.Text = "Obriši";
             this.btnObrisiVlasnika.UseVisualStyleBackColor = true;
@@ -392,10 +406,11 @@ namespace VeterinarskaOrdinacija.Forme
             this.tabLjubimci.Controls.Add(this.dgvLjubimci);
             this.tabLjubimci.Controls.Add(this.pnlLjubimciTop);
             this.tabLjubimci.Controls.Add(this.pnlLjubimciDno);
-            this.tabLjubimci.Location = new System.Drawing.Point(4, 25);
+            this.tabLjubimci.Location = new System.Drawing.Point(4, 29);
+            this.tabLjubimci.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabLjubimci.Name = "tabLjubimci";
-            this.tabLjubimci.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLjubimci.Size = new System.Drawing.Size(947, 589);
+            this.tabLjubimci.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabLjubimci.Size = new System.Drawing.Size(1066, 725);
             this.tabLjubimci.TabIndex = 1;
             this.tabLjubimci.Text = "Ljubimci";
             this.tabLjubimci.UseVisualStyleBackColor = true;
@@ -406,14 +421,15 @@ namespace VeterinarskaOrdinacija.Forme
             this.dgvLjubimci.AllowUserToDeleteRows = false;
             this.dgvLjubimci.ColumnHeadersHeight = 29;
             this.dgvLjubimci.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLjubimci.Location = new System.Drawing.Point(3, 54);
+            this.dgvLjubimci.Location = new System.Drawing.Point(3, 68);
+            this.dgvLjubimci.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvLjubimci.MultiSelect = false;
             this.dgvLjubimci.Name = "dgvLjubimci";
             this.dgvLjubimci.ReadOnly = true;
             this.dgvLjubimci.RowHeadersVisible = false;
             this.dgvLjubimci.RowHeadersWidth = 51;
             this.dgvLjubimci.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLjubimci.Size = new System.Drawing.Size(941, 481);
+            this.dgvLjubimci.Size = new System.Drawing.Size(1060, 589);
             this.dgvLjubimci.TabIndex = 0;
             this.dgvLjubimci.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLjubimci_CellDoubleClick);
             // 
@@ -424,42 +440,45 @@ namespace VeterinarskaOrdinacija.Forme
             this.pnlLjubimciTop.Controls.Add(this.lblFilterVlasnik);
             this.pnlLjubimciTop.Controls.Add(this.cmbFilterVlasnik);
             this.pnlLjubimciTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLjubimciTop.Location = new System.Drawing.Point(3, 3);
+            this.pnlLjubimciTop.Location = new System.Drawing.Point(3, 4);
+            this.pnlLjubimciTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlLjubimciTop.Name = "pnlLjubimciTop";
-            this.pnlLjubimciTop.Size = new System.Drawing.Size(941, 51);
+            this.pnlLjubimciTop.Size = new System.Drawing.Size(1060, 64);
             this.pnlLjubimciTop.TabIndex = 1;
             // 
             // lblFilterVrsta
             // 
-            this.lblFilterVrsta.Location = new System.Drawing.Point(9, 15);
+            this.lblFilterVrsta.Location = new System.Drawing.Point(10, 19);
             this.lblFilterVrsta.Name = "lblFilterVrsta";
-            this.lblFilterVrsta.Size = new System.Drawing.Size(51, 21);
+            this.lblFilterVrsta.Size = new System.Drawing.Size(57, 26);
             this.lblFilterVrsta.TabIndex = 0;
             this.lblFilterVrsta.Text = "Vrsta:";
             // 
             // cmbFilterVrsta
             // 
             this.cmbFilterVrsta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilterVrsta.Location = new System.Drawing.Point(66, 12);
+            this.cmbFilterVrsta.Location = new System.Drawing.Point(74, 15);
+            this.cmbFilterVrsta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbFilterVrsta.Name = "cmbFilterVrsta";
-            this.cmbFilterVrsta.Size = new System.Drawing.Size(159, 24);
+            this.cmbFilterVrsta.Size = new System.Drawing.Size(178, 28);
             this.cmbFilterVrsta.TabIndex = 1;
             this.cmbFilterVrsta.SelectedIndexChanged += new System.EventHandler(this.cmbFilterVrsta_SelectedIndexChanged);
             // 
             // lblFilterVlasnik
             // 
-            this.lblFilterVlasnik.Location = new System.Drawing.Point(246, 15);
+            this.lblFilterVlasnik.Location = new System.Drawing.Point(277, 19);
             this.lblFilterVlasnik.Name = "lblFilterVlasnik";
-            this.lblFilterVlasnik.Size = new System.Drawing.Size(63, 21);
+            this.lblFilterVlasnik.Size = new System.Drawing.Size(71, 26);
             this.lblFilterVlasnik.TabIndex = 2;
             this.lblFilterVlasnik.Text = "Vlasnik:";
             // 
             // cmbFilterVlasnik
             // 
             this.cmbFilterVlasnik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilterVlasnik.Location = new System.Drawing.Point(314, 12);
+            this.cmbFilterVlasnik.Location = new System.Drawing.Point(353, 15);
+            this.cmbFilterVlasnik.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbFilterVlasnik.Name = "cmbFilterVlasnik";
-            this.cmbFilterVlasnik.Size = new System.Drawing.Size(262, 24);
+            this.cmbFilterVlasnik.Size = new System.Drawing.Size(294, 28);
             this.cmbFilterVlasnik.TabIndex = 3;
             this.cmbFilterVlasnik.SelectedIndexChanged += new System.EventHandler(this.cmbFilterVlasnik_SelectedIndexChanged);
             // 
@@ -470,16 +489,18 @@ namespace VeterinarskaOrdinacija.Forme
             this.pnlLjubimciDno.Controls.Add(this.btnObrisiLjubimca);
             this.pnlLjubimciDno.Controls.Add(this.btnIstorija);
             this.pnlLjubimciDno.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlLjubimciDno.Location = new System.Drawing.Point(3, 535);
+            this.pnlLjubimciDno.Location = new System.Drawing.Point(3, 657);
+            this.pnlLjubimciDno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlLjubimciDno.Name = "pnlLjubimciDno";
-            this.pnlLjubimciDno.Size = new System.Drawing.Size(941, 51);
+            this.pnlLjubimciDno.Size = new System.Drawing.Size(1060, 64);
             this.pnlLjubimciDno.TabIndex = 2;
             // 
             // btnDodajLjubimca
             // 
-            this.btnDodajLjubimca.Location = new System.Drawing.Point(9, 11);
+            this.btnDodajLjubimca.Location = new System.Drawing.Point(10, 14);
+            this.btnDodajLjubimca.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDodajLjubimca.Name = "btnDodajLjubimca";
-            this.btnDodajLjubimca.Size = new System.Drawing.Size(114, 32);
+            this.btnDodajLjubimca.Size = new System.Drawing.Size(128, 40);
             this.btnDodajLjubimca.TabIndex = 0;
             this.btnDodajLjubimca.Text = "Dodaj";
             this.btnDodajLjubimca.UseVisualStyleBackColor = true;
@@ -487,9 +508,10 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // btnIzmeniLjubimca
             // 
-            this.btnIzmeniLjubimca.Location = new System.Drawing.Point(131, 11);
+            this.btnIzmeniLjubimca.Location = new System.Drawing.Point(147, 14);
+            this.btnIzmeniLjubimca.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIzmeniLjubimca.Name = "btnIzmeniLjubimca";
-            this.btnIzmeniLjubimca.Size = new System.Drawing.Size(114, 32);
+            this.btnIzmeniLjubimca.Size = new System.Drawing.Size(128, 40);
             this.btnIzmeniLjubimca.TabIndex = 1;
             this.btnIzmeniLjubimca.Text = "Izmeni";
             this.btnIzmeniLjubimca.UseVisualStyleBackColor = true;
@@ -497,9 +519,10 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // btnObrisiLjubimca
             // 
-            this.btnObrisiLjubimca.Location = new System.Drawing.Point(254, 11);
+            this.btnObrisiLjubimca.Location = new System.Drawing.Point(286, 14);
+            this.btnObrisiLjubimca.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnObrisiLjubimca.Name = "btnObrisiLjubimca";
-            this.btnObrisiLjubimca.Size = new System.Drawing.Size(114, 32);
+            this.btnObrisiLjubimca.Size = new System.Drawing.Size(128, 40);
             this.btnObrisiLjubimca.TabIndex = 2;
             this.btnObrisiLjubimca.Text = "Obriši";
             this.btnObrisiLjubimca.UseVisualStyleBackColor = true;
@@ -507,9 +530,10 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // btnIstorija
             // 
-            this.btnIstorija.Location = new System.Drawing.Point(389, 11);
+            this.btnIstorija.Location = new System.Drawing.Point(438, 14);
+            this.btnIstorija.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIstorija.Name = "btnIstorija";
-            this.btnIstorija.Size = new System.Drawing.Size(160, 32);
+            this.btnIstorija.Size = new System.Drawing.Size(180, 40);
             this.btnIstorija.TabIndex = 3;
             this.btnIstorija.Text = "Istorija pregleda...";
             this.btnIstorija.UseVisualStyleBackColor = true;
@@ -520,10 +544,11 @@ namespace VeterinarskaOrdinacija.Forme
             this.tabPregledi.Controls.Add(this.dgvPregledi);
             this.tabPregledi.Controls.Add(this.pnlPreglediTop);
             this.tabPregledi.Controls.Add(this.pnlPreglediDno);
-            this.tabPregledi.Location = new System.Drawing.Point(4, 25);
+            this.tabPregledi.Location = new System.Drawing.Point(4, 29);
+            this.tabPregledi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPregledi.Name = "tabPregledi";
-            this.tabPregledi.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPregledi.Size = new System.Drawing.Size(947, 589);
+            this.tabPregledi.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPregledi.Size = new System.Drawing.Size(1066, 725);
             this.tabPregledi.TabIndex = 2;
             this.tabPregledi.Text = "Pregledi";
             this.tabPregledi.UseVisualStyleBackColor = true;
@@ -534,14 +559,15 @@ namespace VeterinarskaOrdinacija.Forme
             this.dgvPregledi.AllowUserToDeleteRows = false;
             this.dgvPregledi.ColumnHeadersHeight = 29;
             this.dgvPregledi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPregledi.Location = new System.Drawing.Point(3, 54);
+            this.dgvPregledi.Location = new System.Drawing.Point(3, 68);
+            this.dgvPregledi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvPregledi.MultiSelect = false;
             this.dgvPregledi.Name = "dgvPregledi";
             this.dgvPregledi.ReadOnly = true;
             this.dgvPregledi.RowHeadersVisible = false;
             this.dgvPregledi.RowHeadersWidth = 51;
             this.dgvPregledi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPregledi.Size = new System.Drawing.Size(941, 481);
+            this.dgvPregledi.Size = new System.Drawing.Size(1060, 589);
             this.dgvPregledi.TabIndex = 0;
             this.dgvPregledi.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPregledi_CellDoubleClick);
             // 
@@ -550,25 +576,27 @@ namespace VeterinarskaOrdinacija.Forme
             this.pnlPreglediTop.Controls.Add(this.lblFilterLjubimac);
             this.pnlPreglediTop.Controls.Add(this.cmbFilterLjubimac);
             this.pnlPreglediTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlPreglediTop.Location = new System.Drawing.Point(3, 3);
+            this.pnlPreglediTop.Location = new System.Drawing.Point(3, 4);
+            this.pnlPreglediTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlPreglediTop.Name = "pnlPreglediTop";
-            this.pnlPreglediTop.Size = new System.Drawing.Size(941, 51);
+            this.pnlPreglediTop.Size = new System.Drawing.Size(1060, 64);
             this.pnlPreglediTop.TabIndex = 1;
             // 
             // lblFilterLjubimac
             // 
-            this.lblFilterLjubimac.Location = new System.Drawing.Point(9, 15);
+            this.lblFilterLjubimac.Location = new System.Drawing.Point(10, 19);
             this.lblFilterLjubimac.Name = "lblFilterLjubimac";
-            this.lblFilterLjubimac.Size = new System.Drawing.Size(80, 21);
+            this.lblFilterLjubimac.Size = new System.Drawing.Size(90, 26);
             this.lblFilterLjubimac.TabIndex = 0;
             this.lblFilterLjubimac.Text = "Ljubimac:";
             // 
             // cmbFilterLjubimac
             // 
             this.cmbFilterLjubimac.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilterLjubimac.Location = new System.Drawing.Point(91, 12);
+            this.cmbFilterLjubimac.Location = new System.Drawing.Point(102, 15);
+            this.cmbFilterLjubimac.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbFilterLjubimac.Name = "cmbFilterLjubimac";
-            this.cmbFilterLjubimac.Size = new System.Drawing.Size(319, 24);
+            this.cmbFilterLjubimac.Size = new System.Drawing.Size(358, 28);
             this.cmbFilterLjubimac.TabIndex = 1;
             this.cmbFilterLjubimac.SelectedIndexChanged += new System.EventHandler(this.cmbFilterLjubimac_SelectedIndexChanged);
             // 
@@ -579,16 +607,18 @@ namespace VeterinarskaOrdinacija.Forme
             this.pnlPreglediDno.Controls.Add(this.btnObrisiPregled);
             this.pnlPreglediDno.Controls.Add(this.btnOsvezi);
             this.pnlPreglediDno.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlPreglediDno.Location = new System.Drawing.Point(3, 535);
+            this.pnlPreglediDno.Location = new System.Drawing.Point(3, 657);
+            this.pnlPreglediDno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlPreglediDno.Name = "pnlPreglediDno";
-            this.pnlPreglediDno.Size = new System.Drawing.Size(941, 51);
+            this.pnlPreglediDno.Size = new System.Drawing.Size(1060, 64);
             this.pnlPreglediDno.TabIndex = 2;
             // 
             // btnDodajPregled
             // 
-            this.btnDodajPregled.Location = new System.Drawing.Point(9, 11);
+            this.btnDodajPregled.Location = new System.Drawing.Point(10, 14);
+            this.btnDodajPregled.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDodajPregled.Name = "btnDodajPregled";
-            this.btnDodajPregled.Size = new System.Drawing.Size(114, 32);
+            this.btnDodajPregled.Size = new System.Drawing.Size(128, 40);
             this.btnDodajPregled.TabIndex = 0;
             this.btnDodajPregled.Text = "Dodaj";
             this.btnDodajPregled.UseVisualStyleBackColor = true;
@@ -596,9 +626,10 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // btnIzmeniPregled
             // 
-            this.btnIzmeniPregled.Location = new System.Drawing.Point(131, 11);
+            this.btnIzmeniPregled.Location = new System.Drawing.Point(147, 14);
+            this.btnIzmeniPregled.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIzmeniPregled.Name = "btnIzmeniPregled";
-            this.btnIzmeniPregled.Size = new System.Drawing.Size(114, 32);
+            this.btnIzmeniPregled.Size = new System.Drawing.Size(128, 40);
             this.btnIzmeniPregled.TabIndex = 1;
             this.btnIzmeniPregled.Text = "Izmeni";
             this.btnIzmeniPregled.UseVisualStyleBackColor = true;
@@ -606,9 +637,10 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // btnObrisiPregled
             // 
-            this.btnObrisiPregled.Location = new System.Drawing.Point(254, 11);
+            this.btnObrisiPregled.Location = new System.Drawing.Point(286, 14);
+            this.btnObrisiPregled.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnObrisiPregled.Name = "btnObrisiPregled";
-            this.btnObrisiPregled.Size = new System.Drawing.Size(114, 32);
+            this.btnObrisiPregled.Size = new System.Drawing.Size(128, 40);
             this.btnObrisiPregled.TabIndex = 2;
             this.btnObrisiPregled.Text = "Obriši";
             this.btnObrisiPregled.UseVisualStyleBackColor = true;
@@ -616,9 +648,10 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // btnOsvezi
             // 
-            this.btnOsvezi.Location = new System.Drawing.Point(389, 11);
+            this.btnOsvezi.Location = new System.Drawing.Point(438, 14);
+            this.btnOsvezi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOsvezi.Name = "btnOsvezi";
-            this.btnOsvezi.Size = new System.Drawing.Size(114, 32);
+            this.btnOsvezi.Size = new System.Drawing.Size(128, 40);
             this.btnOsvezi.TabIndex = 3;
             this.btnOsvezi.Text = "Osveži";
             this.btnOsvezi.UseVisualStyleBackColor = true;
@@ -631,16 +664,17 @@ namespace VeterinarskaOrdinacija.Forme
             // 
             // FormaGlavna
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1257, 693);
+            this.ClientSize = new System.Drawing.Size(1414, 866);
             this.Controls.Add(this.split);
             this.Controls.Add(this.toolStripGlavni);
             this.Controls.Add(this.statusStripGlavni);
             this.Controls.Add(this.menuGlavni);
             this.Icon = global::VeterinarskaOrdinacija.Properties.Resources.AppIcon;
             this.MainMenuStrip = this.menuGlavni;
-            this.MinimumSize = new System.Drawing.Size(1026, 637);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(1152, 782);
             this.Name = "FormaGlavna";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Veterinarska ordinacija";
@@ -672,5 +706,7 @@ namespace VeterinarskaOrdinacija.Forme
             this.PerformLayout();
 
         }
+
+        #endregion
     }
 }

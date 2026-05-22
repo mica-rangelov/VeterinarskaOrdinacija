@@ -52,9 +52,9 @@ namespace VeterinarskaOrdinacija.Podaci
 
         public Korisnik Prijavi(string korisnickoIme, string lozinka)
         {
-            var hes = HashLozinke.Hes(lozinka);
+            var hash = HashLozinke.Hash(lozinka);
             return Lista.FirstOrDefault(k =>
-                k.KorisnickoIme == korisnickoIme && k.LozinkaHash == hes);
+                k.KorisnickoIme == korisnickoIme && k.LozinkaHash == hash);
         }
 
         private void KreirajDefaultAdmina()
@@ -62,7 +62,7 @@ namespace VeterinarskaOrdinacija.Podaci
             Lista.Add(new Korisnik
             {
                 KorisnickoIme = "admin",
-                LozinkaHash = HashLozinke.Hes("admin123")
+                LozinkaHash = HashLozinke.Hash("admin123")
             });
             Sacuvaj();
         }

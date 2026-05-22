@@ -5,7 +5,7 @@ namespace VeterinarskaOrdinacija.Pomocno
 {
     public static class HashLozinke
     {
-        public static string Hes(string lozinka)
+        public static string Hash(string lozinka)
         {
      
             if (lozinka == null) lozinka = string.Empty;
@@ -18,9 +18,9 @@ namespace VeterinarskaOrdinacija.Pomocno
             }
         }
 
-        public static bool Proveri(string lozinka, string hes)
+        public static bool Proveri(string lozinka, string hash)
         {
-            return Hes(lozinka) == hes;
+            return Hash(lozinka) == hash;
         }
     }
 }

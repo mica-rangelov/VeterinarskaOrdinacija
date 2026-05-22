@@ -22,6 +22,8 @@ namespace VeterinarskaOrdinacija.Forme
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -46,6 +48,7 @@ namespace VeterinarskaOrdinacija.Forme
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(300, 100);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Normal;
+            this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             //
             // lblNaslov
@@ -54,14 +57,16 @@ namespace VeterinarskaOrdinacija.Forme
             this.lblNaslov.Location = new System.Drawing.Point(30, 120);
             this.lblNaslov.Name = "lblNaslov";
             this.lblNaslov.Size = new System.Drawing.Size(300, 30);
-            this.lblNaslov.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNaslov.TabIndex = 1;
             this.lblNaslov.Text = "Veterinarska ordinacija";
+            this.lblNaslov.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             //
             // lblKorisnik
             //
             this.lblKorisnik.Location = new System.Drawing.Point(30, 170);
             this.lblKorisnik.Name = "lblKorisnik";
             this.lblKorisnik.Size = new System.Drawing.Size(120, 20);
+            this.lblKorisnik.TabIndex = 2;
             this.lblKorisnik.Text = "Korisničko ime:";
             //
             // txtKorisnik
@@ -69,12 +74,14 @@ namespace VeterinarskaOrdinacija.Forme
             this.txtKorisnik.Location = new System.Drawing.Point(150, 168);
             this.txtKorisnik.Name = "txtKorisnik";
             this.txtKorisnik.Size = new System.Drawing.Size(180, 23);
+            this.txtKorisnik.TabIndex = 3;
             //
             // lblLozinka
             //
             this.lblLozinka.Location = new System.Drawing.Point(30, 205);
             this.lblLozinka.Name = "lblLozinka";
             this.lblLozinka.Size = new System.Drawing.Size(120, 20);
+            this.lblLozinka.TabIndex = 4;
             this.lblLozinka.Text = "Lozinka:";
             //
             // txtLozinka
@@ -83,12 +90,14 @@ namespace VeterinarskaOrdinacija.Forme
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.PasswordChar = '*';
             this.txtLozinka.Size = new System.Drawing.Size(180, 23);
+            this.txtLozinka.TabIndex = 5;
             //
             // btnPrijava
             //
             this.btnPrijava.Location = new System.Drawing.Point(60, 250);
             this.btnPrijava.Name = "btnPrijava";
             this.btnPrijava.Size = new System.Drawing.Size(110, 32);
+            this.btnPrijava.TabIndex = 6;
             this.btnPrijava.Text = "Prijava";
             this.btnPrijava.UseVisualStyleBackColor = true;
             this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
@@ -98,6 +107,7 @@ namespace VeterinarskaOrdinacija.Forme
             this.btnOdustani.Location = new System.Drawing.Point(190, 250);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(110, 32);
+            this.btnOdustani.TabIndex = 7;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
             this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
@@ -107,6 +117,7 @@ namespace VeterinarskaOrdinacija.Forme
             this.lblPoruka.Location = new System.Drawing.Point(30, 295);
             this.lblPoruka.Name = "lblPoruka";
             this.lblPoruka.Size = new System.Drawing.Size(300, 20);
+            this.lblPoruka.TabIndex = 8;
             this.lblPoruka.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             //
             // erpGreska
@@ -141,5 +152,7 @@ namespace VeterinarskaOrdinacija.Forme
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        #endregion
     }
 }

@@ -28,6 +28,8 @@ namespace VeterinarskaOrdinacija.Forme
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -49,7 +51,6 @@ namespace VeterinarskaOrdinacija.Forme
             this.grpPodaci.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erpGreska)).BeginInit();
             this.SuspendLayout();
-
             //
             // grpPodaci
             //
@@ -59,79 +60,127 @@ namespace VeterinarskaOrdinacija.Forme
             this.grpPodaci.Controls.Add(this.dtpDatum);
             this.grpPodaci.Controls.Add(this.lblVeterinar);
             this.grpPodaci.Location = new System.Drawing.Point(12, 12);
+            this.grpPodaci.Name = "grpPodaci";
             this.grpPodaci.Size = new System.Drawing.Size(540, 120);
+            this.grpPodaci.TabIndex = 0;
             this.grpPodaci.TabStop = false;
             this.grpPodaci.Text = "Pregled";
-
+            //
+            // lblLjubimac
+            //
             this.lblLjubimac.Location = new System.Drawing.Point(12, 32);
+            this.lblLjubimac.Name = "lblLjubimac";
             this.lblLjubimac.Size = new System.Drawing.Size(90, 20);
+            this.lblLjubimac.TabIndex = 0;
             this.lblLjubimac.Text = "Ljubimac:";
+            //
+            // cmbLjubimac
+            //
             this.cmbLjubimac.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLjubimac.Location = new System.Drawing.Point(110, 29);
+            this.cmbLjubimac.Name = "cmbLjubimac";
             this.cmbLjubimac.Size = new System.Drawing.Size(310, 23);
-
+            this.cmbLjubimac.TabIndex = 1;
+            //
+            // lblDatum
+            //
             this.lblDatum.Location = new System.Drawing.Point(12, 65);
+            this.lblDatum.Name = "lblDatum";
             this.lblDatum.Size = new System.Drawing.Size(90, 20);
+            this.lblDatum.TabIndex = 2;
             this.lblDatum.Text = "Datum:";
+            //
+            // dtpDatum
+            //
             this.dtpDatum.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpDatum.CustomFormat = "dd.MM.yyyy. HH:mm";
             this.dtpDatum.Location = new System.Drawing.Point(110, 62);
+            this.dtpDatum.Name = "dtpDatum";
             this.dtpDatum.Size = new System.Drawing.Size(180, 23);
-
-            this.lblVeterinar.Location = new System.Drawing.Point(12, 92);
-            this.lblVeterinar.Size = new System.Drawing.Size(500, 20);
-            this.lblVeterinar.Text = "Veterinar:";
-
+            this.dtpDatum.TabIndex = 3;
             //
-            // Dijagnoza
+            // lblVeterinar
+            //
+            this.lblVeterinar.Location = new System.Drawing.Point(12, 92);
+            this.lblVeterinar.Name = "lblVeterinar";
+            this.lblVeterinar.Size = new System.Drawing.Size(500, 20);
+            this.lblVeterinar.TabIndex = 4;
+            this.lblVeterinar.Text = "Veterinar:";
+            //
+            // lblDijagnoza
             //
             this.lblDijagnoza.Location = new System.Drawing.Point(12, 145);
+            this.lblDijagnoza.Name = "lblDijagnoza";
             this.lblDijagnoza.Size = new System.Drawing.Size(90, 20);
+            this.lblDijagnoza.TabIndex = 1;
             this.lblDijagnoza.Text = "Dijagnoza:";
+            //
+            // txtDijagnoza
+            //
             this.txtDijagnoza.Location = new System.Drawing.Point(110, 145);
             this.txtDijagnoza.Multiline = true;
+            this.txtDijagnoza.Name = "txtDijagnoza";
             this.txtDijagnoza.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDijagnoza.Size = new System.Drawing.Size(440, 60);
-
+            this.txtDijagnoza.TabIndex = 2;
             //
-            // Terapija
+            // lblTerapija
             //
             this.lblTerapija.Location = new System.Drawing.Point(12, 215);
+            this.lblTerapija.Name = "lblTerapija";
             this.lblTerapija.Size = new System.Drawing.Size(90, 20);
+            this.lblTerapija.TabIndex = 3;
             this.lblTerapija.Text = "Terapija:";
+            //
+            // txtTerapija
+            //
             this.txtTerapija.Location = new System.Drawing.Point(110, 215);
             this.txtTerapija.Multiline = true;
+            this.txtTerapija.Name = "txtTerapija";
             this.txtTerapija.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTerapija.Size = new System.Drawing.Size(440, 60);
-
+            this.txtTerapija.TabIndex = 4;
             //
-            // Napomene
+            // lblNapomene
             //
             this.lblNapomene.Location = new System.Drawing.Point(12, 285);
+            this.lblNapomene.Name = "lblNapomene";
             this.lblNapomene.Size = new System.Drawing.Size(90, 20);
+            this.lblNapomene.TabIndex = 5;
             this.lblNapomene.Text = "Napomene:";
+            //
+            // txtNapomene
+            //
             this.txtNapomene.Location = new System.Drawing.Point(110, 285);
             this.txtNapomene.Multiline = true;
+            this.txtNapomene.Name = "txtNapomene";
             this.txtNapomene.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtNapomene.Size = new System.Drawing.Size(440, 60);
-
+            this.txtNapomene.TabIndex = 6;
             //
-            // btnSacuvaj / btnOtkazi
+            // btnSacuvaj
             //
             this.btnSacuvaj.Location = new System.Drawing.Point(340, 360);
+            this.btnSacuvaj.Name = "btnSacuvaj";
             this.btnSacuvaj.Size = new System.Drawing.Size(100, 32);
+            this.btnSacuvaj.TabIndex = 7;
             this.btnSacuvaj.Text = "Sačuvaj";
             this.btnSacuvaj.UseVisualStyleBackColor = true;
             this.btnSacuvaj.Click += new System.EventHandler(this.btnSacuvaj_Click);
-
+            //
+            // btnOtkazi
+            //
             this.btnOtkazi.Location = new System.Drawing.Point(450, 360);
+            this.btnOtkazi.Name = "btnOtkazi";
             this.btnOtkazi.Size = new System.Drawing.Size(100, 32);
+            this.btnOtkazi.TabIndex = 8;
             this.btnOtkazi.Text = "Otkaži";
             this.btnOtkazi.UseVisualStyleBackColor = true;
             this.btnOtkazi.Click += new System.EventHandler(this.btnOtkazi_Click);
-
+            //
+            // erpGreska
+            //
             this.erpGreska.ContainerControl = this;
-
             //
             // FormaPregled
             //
@@ -154,12 +203,13 @@ namespace VeterinarskaOrdinacija.Forme
             this.Name = "FormaPregled";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Pregled";
-
             this.grpPodaci.ResumeLayout(false);
             this.grpPodaci.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erpGreska)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        #endregion
     }
 }
