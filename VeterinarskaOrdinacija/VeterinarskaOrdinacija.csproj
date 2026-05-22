@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E5BEAFB-2DB4-444C-857A-C0F42DCCA892}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VeterinarskaOrdinacija</RootNamespace>
+    <AssemblyName>VeterinarskaOrdinacija</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modeli\Pol.cs" />
+    <Compile Include="Modeli\Ljubimac.cs" />
+    <Compile Include="Modeli\Pas.cs" />
+    <Compile Include="Modeli\Macka.cs" />
+    <Compile Include="Modeli\Papagaj.cs" />
+    <Compile Include="Modeli\Vlasnik.cs" />
+    <Compile Include="Modeli\Pregled.cs" />
+    <Compile Include="Modeli\Korisnik.cs" />
+    <Compile Include="Podaci\Putanje.cs" />
+    <Compile Include="Podaci\Serijalizator.cs" />
+    <Compile Include="Podaci\SkladisteVlasnika.cs" />
+    <Compile Include="Podaci\SkladistePasa.cs" />
+    <Compile Include="Podaci\SkladisteMacaka.cs" />
+    <Compile Include="Podaci\SkladistePapagaja.cs" />
+    <Compile Include="Podaci\SkladistePregleda.cs" />
+    <Compile Include="Podaci\SkladisteKorisnika.cs" />
+    <Compile Include="Pomocno\HashLozinke.cs" />
+    <Compile Include="Pomocno\Validator.cs" />
+    <Compile Include="Pomocno\Sesija.cs" />
+    <Compile Include="Pomocno\SeedPodaci.cs" />
+    <Compile Include="Forme\FormaPrijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormaPrijava.Designer.cs">
+      <DependentUpon>FormaPrijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormaGlavna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormaGlavna.Designer.cs">
+      <DependentUpon>FormaGlavna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormaVlasnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormaVlasnik.Designer.cs">
+      <DependentUpon>FormaVlasnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormaLjubimac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormaLjubimac.Designer.cs">
+      <DependentUpon>FormaLjubimac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormaPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormaPregled.Designer.cs">
+      <DependentUpon>FormaPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormaIstorija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormaIstorija.Designer.cs">
+      <DependentUpon>FormaIstorija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forme\FormaGlavna.resx">
+      <DependentUpon>FormaGlavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\vlasnici.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\psi.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\macke.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\papagaji.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\pregledi.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\korisnici.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
